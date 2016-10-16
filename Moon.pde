@@ -18,29 +18,10 @@ class Moon extends Circle
   // Draw the Moon
   public void draw()
   {
-    // Draw the Moon in white color
-    // Since we have not written it, calling the base class's draw function
-    //fill(200);
-    //noStroke();
-    //ellipse(getX(), getY(), getRadius()+50, getRadius());
-
-    /*
-    size(1000, 1000, P3D);
-     noStroke();
-     fill(0, 51, 102);
-     ambientLight(102, 102, 102);
-     lightSpecular(204, 204, 204);
-     directionalLight(102, 102, 102, 0, 0, -1);
-     specular(255, 255, 255);
-     translate(getX(), getY(), 0);
-     shininess(5);
-     sphere(getRadius());
-     */
-
-
+ 
     // Draw the moon bluish white in color with bright light
     // Draw concentric colors in varying blue color to give the look of moom
-    //
+    
     int numCircles = 50;
     noStroke();
     colorMode(HSB, 360, 100, 100);

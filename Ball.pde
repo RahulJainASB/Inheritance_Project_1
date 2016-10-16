@@ -1,5 +1,6 @@
-
-
+// 
+//  Class Ball. It extends the base class Circle
+//
 
 class Ball extends Circle
 {
@@ -28,9 +29,6 @@ class Ball extends Circle
   public void draw()
   {
     move();
-
-     // you can use the base class's draw function
-    //super.draw();  // This calls the draw function of the Circle class
      
     colorMode(HSB, 360, 100, 100);
     fill(hue, saturation, brightness);

@@ -7,7 +7,6 @@ class Sun extends Circle
   Sun(float xPos, float yPos, int diameter)
   {
     super(xPos, yPos, diameter); // Calls the constructor of the base class
-    //setColor(242,204,47);
 
     // Sets the color for the Sun
     hue         = 50;
@@ -24,7 +23,6 @@ class Sun extends Circle
     int numCircles = 50;
     noStroke();
     colorMode(HSB, 360, 100, 100);
-    //blendMode(DARKEST);
     for (int i = 0; i < numCircles; i++)
     {
       fill( (hue+(i/10)), (i+20)*2, 100);
@@ -74,7 +72,7 @@ class Sun extends Circle
     }
   }
 
-  // Convert polar coordinate to X-Y
+  // Convert polar coordinate to X,Y
   float polarToX(float r1, float theta)
   {
     return (r1 * cos(theta));
