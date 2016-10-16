@@ -18,25 +18,6 @@ class Sun extends Circle
   // Draw the Sun
   public void draw()
   {
-    /*
-    // Draw the sun yellow in color with bright light
-     fill( getRColor(),  getGColor(), getBColor());
-     noStroke();
-     ellipse(getX(), getY(), getDiameter(), getDiameter());
-     
-     // Draw a smaller orange circle in between
-     fill( getRColor()+40,  getGColor()-20, getBColor());
-     ellipse(getX(), getY(), getDiameter()/2, getDiameter()/2 );
-     
-     // Draw a smaller orange circle in between
-     fill( getRColor()+80,  getGColor()-40, getBColor());
-     ellipse(getX(), getY(), getDiameter()/4, getDiameter()/4 );
-     
-     
-   
-     */
-
-
     // Draw the sun yellow in color with bright light
     // Draw concentric colors in varying yellow color to give the look of sun
     //
@@ -87,11 +68,9 @@ class Sun extends Circle
         stroke( getRColor()+80, getGColor()-40, getBColor());
       }
       raySize *= -1;
-
-
+      
       strokeWeight(2);
       line(x1, y1, x2, y2);
-      //println("Rays: ", x1, "  ", y1, "  ",x2, "  ",y2 );
     }
   }
 
@@ -104,5 +83,4 @@ class Sun extends Circle
   {
     return (r1 * sin(theta));
   }
-  
 } //end of class Sun

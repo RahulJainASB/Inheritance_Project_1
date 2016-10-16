@@ -22,9 +22,6 @@ class Ball extends Circle
     hue = moon.hue;
     saturation = 100;
     brightness = 100;
-    
-    //sunToMoonDistance = (moon.getX() - moon.getRadius()) - (sun.getX() + sun.getRadius());
-    
   }
 
 
@@ -40,8 +37,6 @@ class Ball extends Circle
     ellipse( getX(), getY(), getDiameter(), getDiameter());
 
     modifyHue();
-    //saturation++;     saturation = saturation % 100;
-    //brightness++;     brightness =  brightness% 100;
     modifySize();
   }
 
@@ -54,29 +49,7 @@ class Ball extends Circle
     float stop2 = moon.hue;
     float newHue = map( value, start1, stop1, start2, stop2);
     
-    hue = int(newHue);
-
-    /*
-    float distToSun = (getX() - getRadius()) - (sun.getX() + sun.getRadius());
-    
-    if( xDirection > 0 )
-    {
-      // Increase hue towards moon
-      float distanceToMoon = (moon.getX() - moon.getRadius()) - (getX() + getRadius());
-      
-      hue = map( getX(), (sun.getX() + sun.getRadius()), (moon.getX() - moon.getRadius()),
-                          sun.hue, moon.hue);
-      
-      
-      hue = hue + distanceToMoon/
-    }
-    else
-    {
-      float distToSun = (getX() - getRadius()) - (sun.getX() + sun.getRadius());
-      // Reduce hue towards Sun
-    }
-    */
-    
+    hue = int(newHue);    
   }
   
 
@@ -90,7 +63,6 @@ class Ball extends Circle
     float start2 = sun.getRadius() * .5;
     
     float newRadius = map( value, start1, stop1, start2, stop2);
-    
     setRadius( int(newRadius) );    
   }
 
